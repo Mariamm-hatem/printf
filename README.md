@@ -1,115 +1,53 @@
-# Printf Project
+# Printf Project in C - ALX Software Engineering Bootcamp
+### By: TARNUE & Mariamm-hatem
 
-## Description
-This team project is part of the first year curriculum of ALX.
-_printf replicates the C standard library printf() function.
+![Printf Project Banner](https://xperti.io/blogs/wp-content/uploads/2020/10/blog-image-xperti-10.png)
 
-What you should learn from this project:
+## Introduction
 
-* How to use git in a team setting
-* Applying variadic functions to a big project
-* The complexities of printf
-* Managing a lot of files and finding a good workflow
+Welcome to our README article for the printf project, completed as part of the ALX Software Engineering Online Bootcamp. We, Tarnue P. Borbor and Mariamm-hatem, are excited to present our successful implementation of the printf project in the C programming language. This project challenged us to create our own version of the `printf` function, a fundamental tool for displaying output in C.
 
----
+## Project Overview
 
-## Prototype
-```int _printf(const char *format, ...);```
+The `printf` function in C is a powerful tool used to format and display output to the console. Our project involved creating a custom implementation of this function from scratch. We carefully studied the requirements, considered the different format specifiers, and worked collaboratively to ensure our implementation was efficient, accurate, and met the expected standards.
 
-## Usage
-* Prints a string to the standard output, according to a given format
-* All files were created and compiled on Ubuntu 14.04.4 LTS using GCC 4.8.4 with the command ```gcc -Wall -Werror -Wextra -pedantic *.c```
-* Returns the number of characters in the output string on success, -1 otherwise
-* Call it this way: ```_printf("format string", arguments...)``` where ```format string``` can contain conversion specifiers and flags,
-along with regular characters
+## Project Highlights
 
-## Examples
+### 1. Format Specifiers
 
-* ```_printf("Hello, main\n")``` *prints "Hello, Main", followed by a new line*
-* ```_printf("%s", "Hello")``` *prints "Hello"*
-* ```_printf("This is a number: %d", 98)``` *prints "This is a number: 98"*
+We implemented support for a variety of format specifiers, allowing us to handle different data types, such as integers, strings, characters, and more. Our implementation recognized and processed these specifiers accurately, ensuring proper formatting and output.
 
----
+### 2. Code Organization
 
-# Tasks
+Maintaining clean and organized code is crucial for readability and maintainability. We structured our codebase into logical sections, utilized meaningful variable and function names, and added comments where necessary to explain complex logic. This approach not only made it easier for us to work collaboratively but also for anyone reviewing our code.
 
-These are all the tasks of this project, the ones that are completed link to the corresponding files.
+### 3. Extensive Testing
 
-### [0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life](./functions.c)
-* Write a function that produces output according to format.
-  - c : converts input into a character
-  - s : converts input into a string
+We recognized the importance of thorough testing to validate the correctness of our implementation. We created a suite of test cases, covering various scenarios and edge cases, to ensure that our custom `printf` function produced the expected output consistently. This testing process helped us identify and address potential issues before finalizing our project.
 
-### [1. Education is when you read the fine print. Experience is what you get if you don't](handle_print.c)
-* Handle the following conversion specifiers:
-  - d : converts input into a base 10 integer
-  - i : converts input into an integer
+### 4. Collaborative Workflow
 
-### [2. Just because it's in print doesn't mean it's the gospel]()
-* Create a man page for your function
+Collaboration was key to our success in this project. We established effective communication channels, divided tasks based on our strengths, and frequently reviewed each other's code. By leveraging our individual skills, we were able to tackle complex challenges and bring our project to completion.
 
-### [3. With a face like mine, I do better in print]()
-* Handle the following conversion specifiers:
-  - b : the unsigned int argument is converted to binary
+## Getting Started
 
-### [4. What one has not experienced, one will never understand in print]()
-* Handle the following conversion specifiers:
-  - u : converts the input into an unsigned integer
-  - o : converts the input into an octal number
-  - x : converts the input into a hexadecimal number
-  - X : converts the input into a hexadecimal number with capital letters
+To test our custom `printf` function, follow these steps:
 
-### [5. Nothing in fine print is ever good news]()
-* Use a local buffer of 1024 chars in order to call write as little as possible.
+1. Clone our project repository from [GitHub Repository Link](repository_link_here).
+2. Navigate to the project directory using your terminal.
+3. Compile the code using a C compiler, for example: `gcc main.c custom_printf.c -o custom_printf`.
+4. Run the compiled executable: `./custom_printf`.
 
-### [6. My weakness is wearing too much leopard print](./print_custom.c)
-* Handle the following custom conversion specifier:
-  - S : prints the string
-  - Non printable characters (0 < ASCII value < 32 or >= 127) are printed this way: \x, followed by the ASCII code value in hexadecimal (upper case - always 2 characters)
+## Conclusion
 
-### [7. How is the world ruled and led to war? Diplomats lie to journalists and believe these lies when they see them in print](./print_address.c)
-* Handle the following conversion specifier:
-  - p : int input is converted to a pointer address
+In conclusion, the printf project at ALX Software Engineering Bootcamp was a valuable learning experience for us, Tarnue P. Borbor and Mariamm-hatem. Through collaboration, dedication, and rigorous testing, we successfully implemented a custom `printf` function in C. This project enhanced our programming skills, problem-solving abilities, and understanding of C language intricacies.
 
-### [8. The big print gives and the small print takes away](./get_flag.c)
-* Handle the following flag characters for non-custom conversion specifiers:
-  - \+ : adds a \+ in front of signed positive numbers and a \- in front of signed negative numbers
-  - space : same as \+, but adds a space (is overwritten by \+)
-  - \# : adds a 0 in front of octal conversions that don't begin with one, and a 0x or 0X for x or X conversions
+Thank you for taking the time to read our README article. We hope you find our project as exciting and informative as we found it rewarding to complete. If you have any questions or feedback, please don't hesitate to reach out to us.
 
-### [9. Sarcasm is lost in print]
-* Handle the following length modifiers for non-custom conversion specifiers:
-  - l : converts d, i, u, o, x, X conversions in short signed or unsigned ints
-  - h : converts d, i, u, o, x, X conversions in long signed or unsigned ints
+Happy coding!
 
-### [10. Print some money and give it to us for the rain forests]
-* Handle the field width for non-custom conversion specifiers.
+**Tarnue P. Borbor**  
+**Mariamm-hatem**
 
-### [11. The negative is the equivalent of the composer's score, and the print the performance]
-* Handle the precision for non-custom conversion specifiers.
-
-### [12. It's depressing when you're still around and your albums are out of print]
-* Handle the 0 flag character for non-custom conversion specifiers.
-
-### [13. Every time that I wanted to give up, if I saw an interesting textile, print what ever, suddenly I would see a collection]
-* Handle the - flag character for non-custom conversion specifiers.
-
-### [14. Print is the sharpest and the strongest weapon of our party](./print_custom.c)
-* Handle the following custom conversion specifier:
-  - r : prints the reversed string
-
-### [15. The flood of print has turned reading into a process of gulping rather than savoring](./print_custom.c)
-* Handle the following custom conversion specifier:
-  - R : prints the rot13'ed string
-
-### [16. * ]
-* All the above options work well together.
-
----
-
-### Authors
-* **Manuel Dinis Júnior** - [@manueldinisjunior](https://github.com/manueldinisjunior)
-* **Raheem Adegbite** - [@rahdeg](https://github.com/Rahdeg)
-
-
-
+[GitHub: Tarnue P. Borbor](https://github.com/kawalaseania)  
+[GitHub: Mariamm-hatem](https://github.com/Mariamm-hatem)
